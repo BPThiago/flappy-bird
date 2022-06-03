@@ -8,20 +8,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
       body {
         min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: #ccc;
       }
       canvas {
-        border: 1px solid #000;
+        border: 1px solid #777;
         display: block;
-        margin: 0 auto;
       }
     </style>
 </head>
-<body>
+<body>  
     <canvas id="game-canvas" width="320" height="480"></canvas>
     <script src="./game.js"></script>
 </body>
