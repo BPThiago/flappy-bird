@@ -1,9 +1,10 @@
 let frames = 0
 
-localStorage.setItem("ranking", JSON.stringify(
-  {first: -1, second: -1, third: -1}
-));
-
+if (localStorage.getItem('ranking') === null) {
+  localStorage.setItem("ranking", JSON.stringify(
+    {first: -1, second: -1, third: -1}
+  ));
+}
 const sprites = new Image();
 sprites.src = './sprites.png';
 
